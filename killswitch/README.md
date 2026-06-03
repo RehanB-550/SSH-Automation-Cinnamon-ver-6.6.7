@@ -1,3 +1,5 @@
+<img width="622" height="177" alt="a-glowing-red-button-pulses-like-a-digital-heartbeat-an-ode-to-geek-pride-day-and-international-programmers-day-photo" src="https://github.com/user-attachments/assets/97e75f29-8bbd-4925-8260-3011328099b8" />
+
 # Killswitch — SSH Shell-Based Process Termination
 
 A lightweight Bash script that terminates a target application over an SSH session with a single command. Demonstrated here using Firefox as the kill target.
