@@ -1,0 +1,1 @@
+# SSH-Automation-Cinnamon-ver-6.6.7
