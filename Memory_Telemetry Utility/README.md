@@ -1,8 +1,9 @@
-# Sys-Telemetry
+# Sys-Telemetry  SSH Utility tool
 
 A lightweight Linux terminal dashboard written in C++ that displays real-time memory and network I/O statistics by reading directly from the Linux kernel's virtual filesystem.
 
----
+
+<img width="878" height="422" alt="tt4" src="https://github.com/user-attachments/assets/71959e8b-0f90-464c-b8e9-cfcd41d17a1f" />
 
 ## What It Does
 
@@ -20,7 +21,8 @@ The program reads two virtual files exposed by the Linux kernel:
 - `/proc/meminfo` — parsed line by line to extract `MemTotal`, `MemFree`, `Buffers`, and `Cached`. Actual used memory is calculated as `MemTotal - MemFree - Buffers - Cached`, which excludes kernel-managed cache from the "used" figure.
 
 - `/proc/net/dev` — parsed per interface, skipping the loopback (`lo`). Two snapshots are taken one interval apart; the delta between them gives bytes transferred per second, converted to MB/s.
-
+  
+<img width="1002" height="935" alt="tele2" src="https://github.com/user-attachments/assets/1e240946-2a6b-4564-b3b2-dae3911f5114" />
 ---
 
 ## Problems Tackled During Development
@@ -46,6 +48,7 @@ The original 1-second refresh interval combined with full terminal clears (`\033
 ---
 
 ## Build and Run
+<img width="1920" height="1080" alt="systele" src="https://github.com/user-attachments/assets/8eb91b3f-654d-4b19-a191-2ab1ceb6706b" />
 
 ```bash
 g++ -o sys-telemetry main.cpp
