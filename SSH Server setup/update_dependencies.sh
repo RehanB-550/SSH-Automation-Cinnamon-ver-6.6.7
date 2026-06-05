@@ -12,7 +12,7 @@ Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main i386 Packages [623 kB]
 Get:10 http://packages.linuxmint.com zena Release.gpg [833 B]
 Get:11 https://packages.microsoft.com/repos/code stable InRelease [3,590 B]
 Err:5 https://repository.spotify.com stable InRelease
-The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 5384CE82BA52C83A
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 5384CE82BA52C83A
 Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [2,050 kB]
 Get:13 http://security.ubuntu.com/ubuntu noble-security/main i386 Packages [418 kB]
 Get:14 https://packages.microsoft.com/repos/code stable/main amd64 Packages [26.3 kB]
@@ -49,4 +49,9 @@ Get:44 http://archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en 
 Get:45 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
 Get:46 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [5,764 B]
 Get:47 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [10.5 kB]
-Reading package lists... 56%  
+Reading package lists... Done
+W: GPG error: https://repository.spotify.com stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 5384CE82BA52C83A
+E: The repository 'https://repository.spotify.com stable InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+pseudo@IdeaPad-Gaming-3-15ARH05:~$
